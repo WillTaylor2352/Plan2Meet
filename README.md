@@ -3,10 +3,18 @@
 
 Design Document  
 
-Isabella Peters, William Taylor, Ben Kieffer, Marco, Jared Belmont
+Isabella Peters, William Taylor, Ben Kieffer, Marco Bahns, Jared Belmont
 
 ## Introduction 
 
+Do you struggle with coordinating group meetings? Plan2Meet can help you:  
+
+-	Feature a calendar interface.
+-	Team users can block off times where they are unavailable. 
+-	Users can check group availability.  
+-	Display a list of contacts to check their availability. 
+
+Use your Android device to check group availability for collaboration.  Block off times when you are unavailable.  Compare calendars with contact list.  
 
 
 ## Storyboard
