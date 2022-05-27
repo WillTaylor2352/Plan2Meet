@@ -90,12 +90,24 @@ Use your Android device to check group availability for collaboration.  Block of
 
 **Then** 
 
-## Class Diagram
-
+## Class Diagram 
+<img width="899" alt="Plan2Meet UML" src="https://user-images.githubusercontent.com/75335175/170771795-79826cec-5df5-48ac-8948-d8dffe7167a8.png">
 
 ### Class Diagram Description
 
+MainActivity: The first screen the user sees.  This will have your own personal calendar and a list of contacts to look at. 
 
+CalendarActivity: Screen that shows the user's calendar and be able to see their contacts' calendars.  
+
+RetrofitInstance: Bootstrap class required for Retrofit. 
+
+Contacts: Noun class that represents contacts. 
+
+Calendar: Noun class that represents calendar. 
+
+IContactsDAO: Interface for Retrofit to find Contacts JSON.
+
+ICalendarDAO: Interface for Room to persist Calendar data. 
 
 
 ## Scrum Roles
