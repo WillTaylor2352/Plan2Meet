@@ -112,6 +112,12 @@ ICalendarDAO: Interface for Room to persist Calendar data.
 
 ## Scrum Roles
 
- 
+William Taylor - Devops / Product owner / Scrummaster
+Ben Kieffer - UI specialist
+Marco Bahns - Integration specialist
+Isabella Peters - Database specialist
+Jared Belmont - ETL specialist
 
 ## Weekly Meeting
+
+Weekly stand-ups (open mic) will take place on our Discord server on Wednesdays at 6:30pm
