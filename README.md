@@ -21,8 +21,6 @@ Use your Android device to check group availability for collaboration.  Block of
 
 ![storyboard](https://user-images.githubusercontent.com/26129706/170889214-7aadf1a0-872a-489e-bed5-3c8253ff1261.PNG)
 
-# Plan2Meet
-
 ## Functional Requirements
 ### Requirement 1: View calendar
 ##### Dependencies
