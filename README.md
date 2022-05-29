@@ -21,73 +21,67 @@ Use your Android device to check group availability for collaboration.  Block of
 
 ![storyboard](https://user-images.githubusercontent.com/26129706/170889214-7aadf1a0-872a-489e-bed5-3c8253ff1261.PNG)
 
+# Plan2Meet
+
 ## Functional Requirements
+### Requirement 1: View calendar
+##### Dependencies
+The app is online and fully functional.
+##### Scenario
+As a user, I want to compare my availability against that of my team members.
+#### Example 1
+**Given** that a team member has indicated that they will be available to meet at a given date and time
 
-#### Scenario
+**When** I open the calendar
 
+**Then** I should see the specified date and time colored green.
 
+#### Example 2
+**Given** that a team member has indicated that they will be NOT available to meet at a given date and time
 
-#### Dependencies
+**When** I open the calendar
 
+**Then** I should see the specified date and time colored red.
 
+### Requirement 2: Automatic notifications
+##### Dependencies
+The app is online and fully functional.
+##### Scenario
+As a user, I want to be automatically notified of any changes in a team member's availability.
+#### Example 1
+**Given** that I am available to meet at a given date and time for which a team member has previously indicated that they will not be available
 
-#### Assumptions
+**When** the team member changes their status for the specified date and time to 'available'
 
+**Then** I should receive a push notification to inform me of the change. If I click on it, the calendar should open and display the specified date and time colored green.
 
+#### Example 2
+**Given** that I am available to meet at a given date and time for which a team member has previously indicated that they will also be available
 
-#### Examples
+**When** the team member changes their status for the specified date and time to 'not available'
 
+**Then** I should receive a push notification to inform me of the change. If I click on it, the calendar should open and display the specified date and time colored red.
 
-**Given** 
+### Requirement 3: Contact list
+##### Dependencies
+The app is online and fully functional.
+##### Scenario
+As a user, I want to be able to quickly cross-reference my schedule with that of a given team member.
+#### Example 1
+**Given** that I have approved another user as a collaborator
 
-**When** 
+**When** I open the list of my contacts
 
-**Then** 
+**Then** their name should appear, along with an indicator of availibility changes, if there are any.
 
+#### Example 2
+**Given** that another user is in my contact list
 
-1.2  
-**Given** 
+**When** I click on their name
 
-**When**  
-
-**Then** 
-
-
-1.3  
-**Given**  
-**When** 
-**Then** 
-
-
-### Requirement 101: 
-
-#### Scenario
-
-
-
-#### Dependencies
-
-
-#### Assumptions  
-
-
-#### Examples  
-
-1.1  
-**Given** 
-**Given** 
-**When**  
-
-
-**Then**   
-
-2.1  
-**Given** 
-**Given** 
-**When**   
+**Then** the calendar should appear, displaying both of our schedules. Dates and times at which we are both available to meet should be highlighted.
 
 
-**Then** 
 
 ## Class Diagram 
 <img width="899" alt="Plan2Meet UML" src="https://user-images.githubusercontent.com/75335175/170771795-79826cec-5df5-48ac-8948-d8dffe7167a8.png">
