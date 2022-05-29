@@ -20,13 +20,14 @@ Use your Android device to check group availability for collaboration.  Block of
 ## Storyboard
 
 
+
 ## Functional Requirements
 
 ### Requirement 100.0: Search for Plants
 
 #### Scenario
 
-
+![storyboard](https://user-images.githubusercontent.com/26129706/170889214-7aadf1a0-872a-489e-bed5-3c8253ff1261.PNG)
 
 #### Dependencies
 
