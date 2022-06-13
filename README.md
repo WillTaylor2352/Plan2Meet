@@ -115,4 +115,4 @@ Jared Belmont - ETL specialist
 
 ## Weekly Meeting
 
-Weekly stand-ups (open mic) will take place on our Discord server on Wednesdays at 6:30pm
+Weekly stand-ups (open mic) will take place on our Discord server on Mondays at 6:30pm
