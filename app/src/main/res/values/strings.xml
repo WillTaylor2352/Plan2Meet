@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Plan2Meet</string>
+    <string name="calendar">Calendar</string>
+    <string name="groups">groups</string>
+    <string name="contacts">contacts</string>
+    <string name="open_sidebar">open_sidebar</string>
+    <string name="sign_in">sign_in</string>
+    <string name="month_text">June</string>
+    <string name="calendar_month_text">calendar_month_text</string>
+    <color name="nav_green">#50D2C2</color>
 </resources>

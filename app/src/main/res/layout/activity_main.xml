@@ -17,11 +17,109 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="408dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="1dp"
+        android:layout_width="412dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="1dp"
+        android:background="@color/nav_green"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/calendar"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/groups"
+            app:srcCompat="@drawable/user_group" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="-20dp"
+            app:srcCompat="@drawable/contact_book"
+            android:contentDescription="@string/contacts" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="65dp"
+            app:srcCompat="@drawable/active" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/open_sidebar"
+            app:srcCompat="@drawable/open_sidebar"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="335dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/sign_in_google"
+            android:contentDescription="@string/sign_in" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/calendar_month_text"
+            android:fontFamily="sans-serif"
+            android:text="@string/month_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/down" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/add" />
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
