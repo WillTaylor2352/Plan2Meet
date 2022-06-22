@@ -6,10 +6,203 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/nav_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/calendar"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/groups"
+            app:srcCompat="@drawable/user_group" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/contacts"
+            app:srcCompat="@drawable/contact_book" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="65dp"
+            android:contentDescription="@string/active_bar"
+            app:srcCompat="@drawable/active"
+            tools:ignore="ImageContrastCheck" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/open_sidebar"
+            app:srcCompat="@drawable/open_sidebar"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="335dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/sign_in"
+            app:srcCompat="@drawable/sign_in_google" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/calendar_month_text"
+            android:fontFamily="sans-serif"
+            android:text="@string/month_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="35dp"
+            android:contentDescription="@string/down_arrow"
+            app:srcCompat="@drawable/down"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/add"
+            app:srcCompat="@drawable/add"
+            tools:ignore="ImageContrastCheck" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="410dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/app_purple"
+        android:dateTextAppearance="@style/CalendarViewDateCustomText"
+        android:theme="@style/CalendarViewCustom"
+        android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="336dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle"
+        android:contentDescription="@string/header_bar" />
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="340dp"
+        android:text="@string/todays_availability"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="157dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="260dp"
+        android:text="@string/no_events_text"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="483dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="218dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_button"
+        android:contentDescription="@string/add_availability_button" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="218dp"
+        android:text="@string/set_availaiblity_text"
+        android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
