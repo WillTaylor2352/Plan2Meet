@@ -7,5 +7,14 @@
     <string name="sign_in">sign_in</string>
     <string name="month_text">June</string>
     <string name="calendar_month_text">calendar_month_text</string>
+    <string name="down_arrow">down_arrow</string>
+    <string name="add">add</string>
+    <string name="active_bar">active_bar</string>
+    <string name="todays_availability">Today\'s Availability</string>
+    <string name="no_events_text">No availability scheduled today</string>
+    <string name="set_availaiblity_text">Set Availability</string>
+    <string name="header_bar">header_bar</string>
+    <string name="add_availability_button">add_button</string>
     <color name="nav_green">#50D2C2</color>
+    <color name="app_purple">#6563A4</color>
 </resources>

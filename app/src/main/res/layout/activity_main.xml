@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="412dp"
         android:layout_height="70dp"
@@ -53,8 +43,8 @@
             android:layout_height="110dp"
             android:layout_marginStart="295dp"
             android:layout_marginTop="-20dp"
-            app:srcCompat="@drawable/contact_book"
-            android:contentDescription="@string/contacts" />
+            android:contentDescription="@string/contacts"
+            app:srcCompat="@drawable/contact_book" />
 
         <ImageView
             android:id="@+id/imageView13"
@@ -62,7 +52,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="82dp"
             android:layout_marginTop="65dp"
-            app:srcCompat="@drawable/active" />
+            android:contentDescription="@string/active_bar"
+            app:srcCompat="@drawable/active"
+            tools:ignore="ImageContrastCheck" />
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -70,7 +62,7 @@
         android:layout_width="412dp"
         android:layout_height="70dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView5"
@@ -88,8 +80,8 @@
             android:layout_height="50dp"
             android:layout_marginStart="335dp"
             android:layout_marginTop="15dp"
-            app:srcCompat="@drawable/sign_in_google"
-            android:contentDescription="@string/sign_in" />
+            android:contentDescription="@string/sign_in"
+            app:srcCompat="@drawable/sign_in_google" />
 
         <TextView
             android:id="@+id/textView3"
@@ -110,7 +102,9 @@
             android:layout_height="30dp"
             android:layout_marginStart="120dp"
             android:layout_marginTop="35dp"
-            app:srcCompat="@drawable/down" />
+            android:contentDescription="@string/down_arrow"
+            app:srcCompat="@drawable/down"
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -118,8 +112,100 @@
             android:layout_height="35dp"
             android:layout_marginStart="290dp"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/add" />
+            android:contentDescription="@string/add"
+            app:srcCompat="@drawable/add"
+            tools:ignore="ImageContrastCheck" />
 
     </com.google.android.material.navigation.NavigationView>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="410dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/app_purple"
+        android:dateTextAppearance="@style/CalendarViewDateCustomText"
+        android:theme="@style/CalendarViewCustom"
+        android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="336dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle"
+        android:contentDescription="@string/header_bar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="340dp"
+        android:text="@string/todays_availability"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="157dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="260dp"
+        android:text="@string/no_events_text"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="483dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="218dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_button"
+        android:contentDescription="@string/add_availability_button" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="104dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="218dp"
+        android:text="@string/set_availaiblity_text"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
