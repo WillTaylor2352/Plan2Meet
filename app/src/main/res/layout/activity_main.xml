@@ -106,16 +106,6 @@
             app:srcCompat="@drawable/down"
             tools:ignore="ImageContrastCheck" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="290dp"
-            android:layout_marginTop="20dp"
-            android:contentDescription="@string/add"
-            app:srcCompat="@drawable/add"
-            tools:ignore="ImageContrastCheck" />
-
     </com.google.android.material.navigation.NavigationView>
 
     <CalendarView
