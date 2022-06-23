@@ -122,43 +122,13 @@
         android:id="@+id/calendarView"
         android:layout_width="410dp"
         android:layout_height="317dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:background="@color/app_purple"
         android:dateTextAppearance="@style/CalendarViewDateCustomText"
         android:theme="@style/CalendarViewCustom"
         android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="391dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="336dp"
-        android:contentDescription="@string/header_bar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rectangle" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="364dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="340dp"
-        android:text="@string/todays_availability"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -169,29 +139,16 @@
         android:layout_marginStart="127dp"
         android:layout_marginTop="413dp"
         android:layout_marginEnd="127dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="50dp"
         android:text="@string/no_events_text"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="127dp"
-        android:layout_marginTop="483dp"
-        android:layout_marginEnd="254dp"
-        android:layout_marginBottom="218dp"
-        android:contentDescription="@string/add_availability_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/add_button" />
+        app:layout_constraintVertical_bias="0.252" />
 
     <TextView
         android:id="@+id/textView5"
@@ -200,7 +157,7 @@
         android:layout_marginStart="166dp"
         android:layout_marginTop="484dp"
         android:layout_marginEnd="141dp"
-        android:layout_marginBottom="218dp"
+        android:layout_marginBottom="50dp"
         android:text="@string/set_availaiblity_text"
         android:textAlignment="center"
         android:textSize="16sp"
@@ -209,6 +166,57 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.345" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="483dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/add_availability_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        app:srcCompat="@drawable/add_button" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/header_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153"
+        app:srcCompat="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/todays_availability"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
