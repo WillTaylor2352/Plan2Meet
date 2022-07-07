@@ -1,4 +1,4 @@
-package com.example.plan2meet
+package com.plan2meet.ui
 
 
 import retrofit2.Retrofit
