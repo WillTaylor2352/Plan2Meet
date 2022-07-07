@@ -1,6 +1,6 @@
 package com.plan2meet.dto
 
-class Contact (
+class ContactDTO (
     val firstName : String = "",
     val lastName  : String = "",
     val email     : String = "",
