@@ -44,7 +44,11 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
 
-    //koin for android
+    // user authentication
+    implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+
+    // koin for android
     implementation "io.insert-koin:koin-android:3.1.4"
     implementation 'com.squareup.okhttp3:okhttp:4.9.2'
 }
