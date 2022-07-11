@@ -1,11 +1,13 @@
 package com.plan2meet.dto
 
+import com.google.gson.annotations.SerializedName
+
 class ContactDTO (
-    val firstName : String = "",
-    val lastName  : String = "",
-    val email     : String = "",
-    val phone     : String = "", // this value cannot be an Integer due to the size of "Int"
-    var favorited : Boolean = false)
+    @SerializedName("firstName") val firstName : String = "",
+    @SerializedName("lastName") val lastName  : String = "",
+    @SerializedName("email") val email     : String = "",
+    @SerializedName("phone") val phone     : String = "", // this value cannot be an Integer due to the size of "Int"
+    @SerializedName("favorite") var favorite : Boolean = false)
 {
     @Override
     override fun toString(): String {
