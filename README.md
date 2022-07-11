@@ -3,7 +3,7 @@
 
 Design Document  
 
-Isabella Peters, William Taylor, Ben Kieffer, Marco Bahns, Jared Belmont
+Isabella Peters, William Taylor, Ben Kieffer, Marco Bahns
 
 ## Introduction 
 
@@ -110,8 +110,6 @@ Ben Kieffer - UI specialist
 Marco Bahns - Integration specialist
 
 Isabella Peters - Database specialist
-
-Jared Belmont - ETL specialist
 
 ## Weekly Meeting
 
