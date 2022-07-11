@@ -1,7 +1,7 @@
 # Plan2Meet
 ---
 
-## **Please contact Will Taylor through Teams to be added as a collaborator for IT3048C code review**
+## **Please contact Will Taylor (taylorw5) through Teams to be added as a collaborator for IT3048C code review**
 
 Design Document  
 
