@@ -10,7 +10,8 @@ class CalendarDTO (
     var groupDTO    : GroupDTO,
         )
 {
+    //Returns true if this CalendarDTO object is equal to the calendarDTO object stored in the groupDTO object's member variable calendarDTO.
     fun checkGroupCalendar (groupDTO: GroupDTO) : Boolean {
-        return groupDTO.calendarDTO == this;
+        return groupDTO.calendarDTO == this
     }
 }
