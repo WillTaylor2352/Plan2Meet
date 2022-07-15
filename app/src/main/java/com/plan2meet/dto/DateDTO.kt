@@ -4,7 +4,7 @@ import java.time.LocalDate
 
 class DateDTO (
     val currentDate     : LocalDate,
-    var events          : Array<EventDTO>
+    var events          : Array<EventDTO>,
         )
 {
 

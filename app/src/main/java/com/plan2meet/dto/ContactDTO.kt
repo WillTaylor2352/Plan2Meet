@@ -7,7 +7,8 @@ class ContactDTO (
     @SerializedName("lastName") val lastName  : String = "",
     @SerializedName("email") val email     : String = "",
     @SerializedName("phone") val phone     : String = "", // this value cannot be an Integer due to the size of "Int"
-    @SerializedName("favorite") var favorite : Boolean = false)
+    @SerializedName("favorite") var favorite : Boolean = false,
+        )
 {
     @Override
     override fun toString(): String {

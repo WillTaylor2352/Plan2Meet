@@ -7,7 +7,7 @@ class CalendarDTO (
     var year        : Year,
     var month       : Month,
     var dates       : Array<DateDTO>,
-    var groupDTO    : GroupDTO
+    var groupDTO    : GroupDTO,
         )
 {
     fun checkGroupCalendar (groupDTO: GroupDTO) : Boolean {
