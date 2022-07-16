@@ -1,2 +1,2 @@
-package com.example.plan2meet
+package com.plan2meet
 
