@@ -9,8 +9,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val event = EventDTO();
-        print(event.toString())
-        setContentView(R.layout.activity_main)
+        print(event.toString());
+        setContentView(R.layout.activity_main);
 
     }
 }
