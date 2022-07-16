@@ -6,15 +6,16 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClientInstance {
     private var retrofit: Retrofit? = null
-    private val BASE_URL = ""
+    //never start a variable with an uppercase.
+    private val baseUrl = ""
 
     val retrofitInstance : Retrofit?
     get() {
         // has the object been created yet?
         if (retrofit == null) {
-            //create it
+            //create
             retrofit = retrofit2.Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
