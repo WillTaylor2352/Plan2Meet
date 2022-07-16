@@ -3,10 +3,10 @@ package com.plan2meet.dto
 import com.google.gson.annotations.SerializedName
 
 class ContactDTO (
-    @SerializedName("firstName") val firstName : String = "",
-    @SerializedName("lastName") val lastName  : String = "",
-    @SerializedName("email") val email     : String = "",
-    @SerializedName("phone") val phone     : String = "", // this value cannot be an Integer due to the size of "Int"
+    @SerializedName("firstName")  private val firstName : String = "",
+    @SerializedName("lastName") private val lastName  : String = "",
+    @SerializedName("email") private val email     : String = "",
+    @SerializedName("phone") private val phone     : String = "", // this value cannot be an Integer due to the size of "Int"
     @SerializedName("favorite") var favorite : Boolean = false)
 {
     @Override

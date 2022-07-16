@@ -4,13 +4,13 @@ import android.media.metrics.Event
 import com.plan2meet.dto.EventDTO
 
 object CompareCalendar {
-    fun getDayEvents() : Array<EventDTO> {
-        var myArr : Array<EventDTO> = arrayOf(EventDTO(), EventDTO())
+    internal fun getDayEvents() : Array<EventDTO> {
+         var myArr : Array<EventDTO> = arrayOf(EventDTO(), EventDTO())
         return myArr
 
     }
 
-    fun compareTimes(eventA: EventDTO, eventB: EventDTO): Boolean {
+    internal fun compareTimes(eventA: EventDTO, eventB: EventDTO): Boolean {
         // TODO: use this method to compare the times from individual events
         /*
         Assumptions: Later in the day is a greater value than earlier in the day

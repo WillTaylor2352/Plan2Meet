@@ -8,9 +8,8 @@ import com.plan2meet.dto.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val event = EventDTO();
+        val event = EventDTO()
         print(event.toString())
         setContentView(R.layout.activity_main)
-
     }
 }
