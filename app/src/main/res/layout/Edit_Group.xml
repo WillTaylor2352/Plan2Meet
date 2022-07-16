@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_purple"
+    tools:context="com.plan2meet.ui.EditGroup">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/nav_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/calendar"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/groups"
+            app:srcCompat="@drawable/user_group" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/contacts"
+            app:srcCompat="@drawable/contact_book" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="65dp"
+            android:contentDescription="@string/active_bar"
+            app:srcCompat="@drawable/active"
+            tools:ignore="ImageContrastCheck" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/open_sidebar"
+            app:srcCompat="@drawable/open_sidebar"
+            tools:ignore="ImageContrastCheck" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="75dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:contentDescription="@string/calendar_month_text"-->
+<!--            android:fontFamily="sans-serif"-->
+<!--            android:text="@string/top_header_text"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:typeface="normal" />-->
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/add"
+            app:srcCompat="@drawable/add"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="30dp"
+            android:text="Groups"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+            </com.google.android.material.navigation.NavigationView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
