@@ -14,8 +14,11 @@ import com.plan2meet.ui.*
 
 @Composable
 fun Calendar(){
-    var trueDate by remember { mutableStateOf(Int) }
+    //var trueDate by remember { mutableStateOf(Int) }
+    var trueDate = 0
     val daysOfWeekArray = arrayOf('S', 'M', 'T', 'W', 'T', 'F', 'S')
+        // this data will have to come from a month object
+    var numberOfDays = 31
 
     Column() {
         Row {
@@ -23,14 +26,24 @@ fun Calendar(){
                 DayOfWeekText(it)
             }
         }
-        Row {
-            DateButton(trueDate = 1)
-            DateButton(trueDate = 2)
+        while (numberOfDays > 0){
+            Row(){
+                for (i in 1..7){
+                    trueDate++
+                    DateButton(trueDate = trueDate, hasEvents = true)
+                    if (numberOfDays == 1) break
+                    numberOfDays--
+                }
+            }
         }
-        Row {
-            DateButton(trueDate = 3)
-            DateButton(trueDate = 4)
-        }
+//        Row {
+//            DateButton(trueDate = 1, true)
+//            DateButton(trueDate = 2, false)
+//        }
+//        Row {
+//            DateButton(trueDate = 3, false)
+//            DateButton(trueDate = 4, true)
+//        }
     }
 }
 
