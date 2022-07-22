@@ -12,5 +12,6 @@ class MainActivity : AppCompatActivity() {
         print(event.toString())
         setContentView(R.layout.activity_main)
 
+
     }
 }
