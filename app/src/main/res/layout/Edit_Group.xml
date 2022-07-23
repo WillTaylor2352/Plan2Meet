@@ -52,7 +52,7 @@
             android:id="@+id/imageView13"
             android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="82dp"
+            android:layout_marginStart="183dp"
             android:layout_marginTop="65dp"
             android:contentDescription="@string/active_bar"
             app:srcCompat="@drawable/active"
