@@ -10,7 +10,7 @@ class Groups : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val event = EventDTO();
         print(event.toString())
-        setContentView(R.layout.Groups)
+        setContentView(R.layout.groups)
 
     }
 }

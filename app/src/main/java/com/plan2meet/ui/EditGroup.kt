@@ -10,7 +10,7 @@ class EditGroup : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val event = EventDTO();
         print(event.toString())
-        setContentView(R.layout.Edit_Group)
+        setContentView(R.layout.edit_group)
 
     }
 }
