@@ -91,7 +91,7 @@
             android:layout_marginTop="30dp"
             android:contentDescription="@string/calendar_month_text"
             android:fontFamily="sans-serif"
-            android:text="@string/month_text"
+            android:text="@string/top_header_text"
             android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="normal" />
