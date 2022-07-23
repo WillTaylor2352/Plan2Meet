@@ -83,29 +83,6 @@
             android:contentDescription="@string/sign_in"
             app:srcCompat="@drawable/sign_in_google" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="75dp"
-            android:layout_marginTop="30dp"
-            android:contentDescription="@string/calendar_month_text"
-            android:fontFamily="sans-serif"
-            android:text="@string/top_header_text"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:typeface="normal" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="35dp"
-            android:contentDescription="@string/down_arrow"
-            app:srcCompat="@drawable/down"
-            tools:ignore="ImageContrastCheck" />
-
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="35dp"
@@ -128,7 +105,6 @@
         android:theme="@style/CalendarViewCustom"
         android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

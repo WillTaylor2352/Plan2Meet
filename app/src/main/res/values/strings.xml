@@ -15,4 +15,6 @@
     <string name="set_availaiblity_text">Set Availability</string>
     <string name="header_bar">header_bar</string>
     <string name="add_availability_button">add_button</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="group_name">Group Name</string>
 </resources>
