@@ -10,7 +10,7 @@ class Contacts : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val event = EventDTO();
         print(event.toString())
-        setContentView(R.layout.Contacts)
+        setContentView(R.layout.contacts)
 
     }
 }
