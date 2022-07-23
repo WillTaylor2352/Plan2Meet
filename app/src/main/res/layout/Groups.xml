@@ -123,7 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#C8C8C8"
-                android:text="@string/contact_name"
+                android:text="@string/group_name"
                 app:iconTint="#C8C8C8" />
         </LinearLayout>
     </ScrollView>
