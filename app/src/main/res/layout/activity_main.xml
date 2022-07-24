@@ -96,9 +96,9 @@
         <Spinner
             android:id="@+id/group_selection_spinner"
             android:layout_width="150dp"
-            android:layout_height="25dp"
+            android:layout_height="48dp"
             android:layout_marginStart="65dp"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="5dp" />
 
     </com.google.android.material.navigation.NavigationView>
 
