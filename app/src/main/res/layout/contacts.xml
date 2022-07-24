@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/calendarButton"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="95dp"
@@ -31,7 +31,7 @@
             tools:layout_editor_absoluteY="8dp" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/groups_Button"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="195dp"
@@ -40,7 +40,7 @@
             app:srcCompat="@drawable/user_group" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/contactsButton"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="295dp"
@@ -52,7 +52,7 @@
             android:id="@+id/imageView13"
             android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="183dp"
+            android:layout_marginStart="283dp"
             android:layout_marginTop="65dp"
             android:contentDescription="@string/active_bar"
             app:srcCompat="@drawable/active"
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="75dp"
             android:layout_marginTop="30dp"
-            android:text="Groups"
+            android:text="Contacts"
             android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="normal" />
@@ -123,7 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#C8C8C8"
-                android:text="@string/group_name"
+                android:text="@string/contact_name"
                 app:iconTint="#C8C8C8" />
         </LinearLayout>
     </ScrollView>
