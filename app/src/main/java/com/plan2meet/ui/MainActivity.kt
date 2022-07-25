@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
     fun groupsButton(view: View) {
         setContentView(R.layout.groups)
     }
-
     fun contactsButton(view: View) {
         setContentView(R.layout.contacts)
+
     }
 
 }

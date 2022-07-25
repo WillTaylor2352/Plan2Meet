@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "775480579096",
+    "project_id": "plan2meet-99433",
+    "storage_bucket": "plan2meet-99433.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775480579096:android:9b43a3b8eb394a2a789f6d",
+        "android_client_info": {
+          "package_name": "com.example.plan2meet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775480579096-bchach383b1mdqqu3lr8d0lf4naocbmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNiqjxuFg22vTpodFMoXd98UvLtoTn6EM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775480579096-bchach383b1mdqqu3lr8d0lf4naocbmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
