@@ -1,7 +1,10 @@
 package com.plan2meet.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ImageView
 import com.example.plan2meet.R
 import com.plan2meet.dto.*
 
@@ -11,7 +14,14 @@ class MainActivity : AppCompatActivity() {
         val event = EventDTO();
         print(event.toString())
         setContentView(R.layout.activity_main)
+    }
 
+    fun groupsButton(view: View) {
+        setContentView(R.layout.groups)
+    }
+    fun contactsButton(view: View) {
+        setContentView(R.layout.contacts)
 
     }
+
 }

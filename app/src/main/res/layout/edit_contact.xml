@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/calendarButton"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="95dp"
@@ -31,7 +31,7 @@
             tools:layout_editor_absoluteY="8dp" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/groups_Button"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="195dp"
@@ -40,7 +40,7 @@
             app:srcCompat="@drawable/user_group" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/contactsButton"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="295dp"
