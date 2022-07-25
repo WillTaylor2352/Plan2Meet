@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/calendarButton"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="95dp"
@@ -29,21 +29,23 @@
             tools:layout_editor_absoluteY="8dp" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/groups_Button"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="195dp"
             android:layout_marginTop="-20dp"
             android:contentDescription="@string/groups"
+            android:onClick="groupsButton"
             app:srcCompat="@drawable/user_group" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/contactsButton"
             android:layout_width="40dp"
             android:layout_height="110dp"
             android:layout_marginStart="295dp"
             android:layout_marginTop="-20dp"
             android:contentDescription="@string/contacts"
+            android:onClick="contactsButton"
             app:srcCompat="@drawable/contact_book" />
 
         <ImageView
@@ -83,29 +85,6 @@
             android:contentDescription="@string/sign_in"
             app:srcCompat="@drawable/sign_in_google" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="75dp"
-            android:layout_marginTop="30dp"
-            android:contentDescription="@string/calendar_month_text"
-            android:fontFamily="sans-serif"
-            android:text="@string/top_header_text"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:typeface="normal" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="35dp"
-            android:contentDescription="@string/down_arrow"
-            app:srcCompat="@drawable/down"
-            tools:ignore="ImageContrastCheck" />
-
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="35dp"
@@ -116,19 +95,25 @@
             app:srcCompat="@drawable/add"
             tools:ignore="ImageContrastCheck" />
 
+        <Spinner
+            android:id="@+id/group_selection_spinner"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="5dp" />
+
     </com.google.android.material.navigation.NavigationView>
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="410dp"
-        android:layout_height="317dp"
+        android:layout_height="350dp"
         android:layout_marginTop="60dp"
         android:background="@color/app_purple"
         android:dateTextAppearance="@style/CalendarViewDateCustomText"
         android:theme="@style/CalendarViewCustom"
         android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -137,7 +122,7 @@
         android:layout_width="157dp"
         android:layout_height="58dp"
         android:layout_marginStart="127dp"
-        android:layout_marginTop="413dp"
+        android:layout_marginTop="480dp"
         android:layout_marginEnd="127dp"
         android:layout_marginBottom="130dp"
         android:text="@string/no_events_text"
@@ -155,7 +140,7 @@
         android:layout_width="104dp"
         android:layout_height="29dp"
         android:layout_marginStart="166dp"
-        android:layout_marginTop="484dp"
+        android:layout_marginTop="550dp"
         android:layout_marginEnd="141dp"
         android:layout_marginBottom="109dp"
         android:text="@string/set_availaiblity_text"
@@ -173,7 +158,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="127dp"
-        android:layout_marginTop="483dp"
+        android:layout_marginTop="547dp"
         android:layout_marginEnd="254dp"
         android:layout_marginBottom="109dp"
         android:contentDescription="@string/add_availability_button"
@@ -190,7 +175,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="391dp"
+        android:layout_marginTop="460dp"
         android:layout_marginEnd="56dp"
         android:layout_marginBottom="168dp"
         android:contentDescription="@string/header_bar"
@@ -207,7 +192,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="364dp"
+        android:layout_marginTop="430dp"
         android:layout_marginEnd="121dp"
         android:layout_marginBottom="170dp"
         android:text="@string/todays_availability"
