@@ -1,12 +1,9 @@
 package com.plan2meet.ui
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.plan2meet.R
-import com.plan2meet.dto.*
+import com.plan2meet.dto.EventDTO
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,12 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun groupsButton(view: View) {
-        setContentView(R.layout.groups)
-    }
-    fun contactsButton(view: View) {
-        setContentView(R.layout.contacts)
-
-    }
+//    fun addListenerOnGroups(view: View) {
+//        val image = findViewById<View>(R.id.groups_Button) as ImageView
+//        image!!.setOnClickListener {
+//            startActivity(Intent(this,Groups::class.java))
+//        }
+//    }
 
 }

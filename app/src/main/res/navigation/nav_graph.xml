@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment5">
+    <fragment
+        android:id="@+id/mainFragment5"
+        android:name="com.plan2meet.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment5_to_contacts3"
+            app:destination="@id/contacts3" />
+        <action
+            android:id="@+id/action_mainFragment5_to_groups3"
+            app:destination="@id/groups3" />
+    </fragment>
+    <fragment
+        android:id="@+id/groups3"
+        android:name="com.plan2meet.fragments.groups"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" />
+    <fragment
+        android:id="@+id/contacts3"
+        android:name="com.plan2meet.fragments.contacts"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+</navigation>

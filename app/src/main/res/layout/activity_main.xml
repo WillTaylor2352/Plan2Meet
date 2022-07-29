@@ -1,207 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.plan2meet.ui.MainActivity">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="412dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="1dp"
-        android:background="@color/nav_green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent">
+    <fragment
+        android:name="com.plan2meet.fragments.MainFragment"
+        android:id="@+id/mainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-        <ImageView
-            android:id="@+id/calendarButton"
-            android:layout_width="40dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="-20dp"
-            android:contentDescription="@string/calendar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/calendar"
-            tools:layout_editor_absoluteY="8dp" />
-
-        <ImageView
-            android:id="@+id/groups_Button"
-            android:layout_width="40dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="195dp"
-            android:layout_marginTop="-20dp"
-            android:contentDescription="@string/groups"
-            android:onClick="groupsButton"
-            app:srcCompat="@drawable/user_group" />
-
-        <ImageView
-            android:id="@+id/contactsButton"
-            android:layout_width="40dp"
-            android:layout_height="110dp"
-            android:layout_marginStart="295dp"
-            android:layout_marginTop="-20dp"
-            android:contentDescription="@string/contacts"
-            android:onClick="contactsButton"
-            app:srcCompat="@drawable/contact_book" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="82dp"
-            android:layout_marginTop="65dp"
-            android:contentDescription="@string/active_bar"
-            app:srcCompat="@drawable/active"
-            tools:ignore="ImageContrastCheck" />
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="412dp"
-        android:layout_height="70dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:contentDescription="@string/open_sidebar"
-            app:srcCompat="@drawable/open_sidebar"
-            tools:ignore="ImageContrastCheck" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="335dp"
-            android:layout_marginTop="15dp"
-            android:contentDescription="@string/sign_in"
-            app:srcCompat="@drawable/sign_in_google" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="290dp"
-            android:layout_marginTop="20dp"
-            android:contentDescription="@string/add"
-            app:srcCompat="@drawable/add"
-            tools:ignore="ImageContrastCheck" />
-
-        <Spinner
-            android:id="@+id/group_selection_spinner"
-            android:layout_width="150dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="5dp" />
-
-    </com.google.android.material.navigation.NavigationView>
-
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="410dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="60dp"
-        android:background="@color/app_purple"
-        android:dateTextAppearance="@style/CalendarViewDateCustomText"
-        android:theme="@style/CalendarViewCustom"
-        android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="157dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="127dp"
-        android:layout_marginTop="480dp"
-        android:layout_marginEnd="127dp"
-        android:layout_marginBottom="130dp"
-        android:text="@string/no_events_text"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="104dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="550dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="109dp"
-        android:text="@string/set_availaiblity_text"
-        android:textAlignment="center"
-        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="127dp"
-        android:layout_marginTop="547dp"
-        android:layout_marginEnd="254dp"
-        android:layout_marginBottom="109dp"
-        android:contentDescription="@string/add_availability_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/add_button" />
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
 
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="168dp"
-        android:contentDescription="@string/header_bar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153"
-        app:srcCompat="@drawable/rectangle" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="430dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="170dp"
-        android:text="@string/todays_availability"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

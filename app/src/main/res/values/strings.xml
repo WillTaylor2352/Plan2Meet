@@ -17,4 +17,10 @@
     <string name="add_availability_button">add_button</string>
     <string name="contact_name">Contact Name</string>
     <string name="group_name">Group Name</string>
+    <string name="calendar_fragment">Calendar Fragment</string>
+    <string name="groups_fragment">Groups Fragment</string>
+    <string name="contacts_fragment">Contacts Fragment</string>
+    <string name="add_availability">Add Availability</string>
+    <string name="groups_page_title">Groups</string>
+    <string name="contacts_title">Contacts</string>
 </resources>
