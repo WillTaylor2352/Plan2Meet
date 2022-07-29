@@ -1,29 +1,23 @@
 package com.plan2meet.ui
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.plan2meet.R
-import com.plan2meet.dto.*
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
+import com.plan2meet.dto.EventDTO
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val event = EventDTO();
         print(event.toString())
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.newmain)
     }
 
-    fun groupsButton(view: View) {
-        setContentView(R.layout.groups)
-    }
-    fun contactsButton(view: View) {
-        setContentView(R.layout.contacts)
-
-    }
+//    fun addListenerOnGroups(view: View) {
+//        val image = findViewById<View>(R.id.groups_Button) as ImageView
+//        image!!.setOnClickListener {
+//            startActivity(Intent(this,Groups::class.java))
+//        }
+//    }
 
 }

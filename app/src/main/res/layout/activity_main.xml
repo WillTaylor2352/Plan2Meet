@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.plan2meet.ui.MainActivity">
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.viewpager.widget.ViewPager>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="412dp"
         android:layout_height="70dp"
@@ -35,7 +45,7 @@
             android:layout_marginStart="195dp"
             android:layout_marginTop="-20dp"
             android:contentDescription="@string/groups"
-            android:onClick="groupsButton"
+            android:onClick="addListenerOnGroups"
             app:srcCompat="@drawable/user_group" />
 
         <ImageView
@@ -45,7 +55,7 @@
             android:layout_marginStart="295dp"
             android:layout_marginTop="-20dp"
             android:contentDescription="@string/contacts"
-            android:onClick="contactsButton"
+            android:onClick=""
             app:srcCompat="@drawable/contact_book" />
 
         <ImageView
