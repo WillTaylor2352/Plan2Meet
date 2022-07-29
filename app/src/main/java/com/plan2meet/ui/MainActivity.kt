@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val event = EventDTO();
         print(event.toString())
-        setContentView(R.layout.newmain)
+        setContentView(R.layout.activity_main)
     }
 
 //    fun addListenerOnGroups(view: View) {
