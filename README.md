@@ -1,8 +1,3 @@
-# Plan2Meet
----
-
-## **Please contact Will Taylor (taylorw5) through Teams to be added as a collaborator for IT3048C code review**
-
 Design Document  
 
 Isabella Peters, William Taylor, Ben Kieffer, Marco Bahns
