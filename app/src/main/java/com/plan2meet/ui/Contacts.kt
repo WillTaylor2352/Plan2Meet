@@ -12,11 +12,11 @@ class Contacts : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val event = EventDTO();
         print(event.toString())
-        setContentView(R.layout.contacts)
+        setContentView(R.layout.fragment_contacts)
 
     }
     fun groupsButton(view: View) {
-        setContentView(R.layout.groups)
+        setContentView(R.layout.fragment_groups)
     }
 
     fun calendarButton(view: View) {

@@ -12,7 +12,7 @@ class Groups : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val event = EventDTO();
         print(event.toString())
-        setContentView(R.layout.groups)
+        setContentView(R.layout.fragment_groups)
 
     }
 
@@ -21,6 +21,6 @@ class Groups : AppCompatActivity() {
     }
 
     fun contactsButton(view: View) {
-        setContentView(R.layout.contacts)
+        setContentView(R.layout.fragment_contacts)
     }
 }
