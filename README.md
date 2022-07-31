@@ -1,3 +1,28 @@
+# Plan2Meet
+---
+
+## **Please contact Will Taylor (taylorw5) through Teams to be added as a collaborator for IT3048C code review**
+
+Design Document  
+
+Isabella Peters, William Taylor, Ben Kieffer, Marco Bahns
+
+## Introduction 
+
+Do you struggle with coordinating group meetings? Plan2Meet can help you:  
+
+-	Feature a calendar interface.
+-	Team users can block off times where they are unavailable. 
+-	Users can check group availability.  
+-	Display a list of contacts to check their availability. 
+
+Use your Android device to check group availability for collaboration.  Block off times when you are unavailable.  Compare calendars with contact list.  
+
+
+## Storyboard
+
+![storyboard](https://user-images.githubusercontent.com/26129706/170889214-7aadf1a0-872a-489e-bed5-3c8253ff1261.PNG)
+
 ## Functional Requirements
 ### Requirement 1: View calendar
 ##### Dependencies
@@ -56,3 +81,38 @@ As a user, I want to be able to quickly cross-reference my schedule with that of
 
 **Then** the calendar should appear, displaying both of our schedules. Dates and times at which we are both available to meet should be highlighted.
 
+
+
+## Class Diagram 
+<img width="899" alt="Plan2Meet UML" src="https://user-images.githubusercontent.com/75335175/170771795-79826cec-5df5-48ac-8948-d8dffe7167a8.png">
+
+### Class Diagram Description
+
+MainActivity: The first screen the user sees.  This will have your own personal calendar and a list of contacts to look at. 
+
+CalendarActivity: Screen that shows the user's calendar and be able to see their contacts' calendars.  
+
+RetrofitInstance: Bootstrap class required for Retrofit. 
+
+Contacts: Noun class that represents contacts. 
+
+Calendar: Noun class that represents calendar. 
+
+IContactsDAO: Interface for Retrofit to find Contacts JSON.
+
+ICalendarDAO: Interface for Room to persist Calendar data. 
+
+
+## Scrum Roles
+
+William Taylor - Devops / Product owner / Scrummaster
+
+Ben Kieffer - UI specialist
+
+Marco Bahns - Integration specialist
+
+Isabella Peters - Database specialist
+
+## Weekly Meeting
+
+Weekly stand-ups (open mic) will take place on our Discord server on Mondays at 6:30pm
