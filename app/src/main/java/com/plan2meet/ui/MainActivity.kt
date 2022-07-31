@@ -13,11 +13,4 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-//    fun addListenerOnGroups(view: View) {
-//        val image = findViewById<View>(R.id.groups_Button) as ImageView
-//        image!!.setOnClickListener {
-//            startActivity(Intent(this,Groups::class.java))
-//        }
-//    }
-
 }
